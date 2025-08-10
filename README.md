@@ -16,7 +16,9 @@ This project introduces and investigates a potential simple approach to PPO that
 
 The Dynamic Entropy PPO (DE-PPO) algorithm extends the standard PPO objective with an adaptive entropy coefficient:
 
-$$\max_{\theta} \quad \mathcal{L}_t(\theta) =  \hat{\mathbb{E}}_t \left[\mathcal{L}^{actor}_t(\theta) - \alpha \mathcal{L}^{critic}_t + \beta H(\pi_\theta)\right]$$
+```math
+\max_{\theta} \quad \mathcal{L}_t(\theta) =  \hat{\mathbb{E}}_t \left[\mathcal{L}^{actor}_t(\theta) - \alpha \mathcal{L}^{critic}_t + \beta H(\pi_\theta)\right]
+```
 
 Where $\beta$ is the dynamic entropy coefficient that changes during training via a sinusoidal oscillation:
 
