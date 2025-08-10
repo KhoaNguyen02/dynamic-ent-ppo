@@ -1,0 +1,5 @@
+gymnasium==0.29.1
+numpy==1.26.4
+torch==2.0.1
+tqdm==4.66.5
+swig==4.3.0
